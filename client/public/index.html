@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CoreUI for React - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,CSS,SCSS,HTML,RWD,Dashboard,React">
+    <title>CoreUI for React</title>
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    
+    
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js//jquery.countup.js"></script>
+    <script src="./js//jquery.easing.min.js"></script>
+    <script src="./js//jquery.flexslider.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/easy-responsive-tabs.js"></script>
+    <script src="./js//imagezoom.js"></script>
+    <script src="./js/minicart.min.js"></script>
+    <script src="./js/modernizr.custom.js"></script>
+    <script src="./js/move-top.js"></script>
+    <script src="./js//responsiveslides.min.js"></script>
+    <script>
+      // Mini Cart
+      paypal.minicart.render({
+        action: '#'
+      });
+    
+      if (~window.location.search.indexOf('reset=true')) {
+        paypal.minicart.reset();
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+      $('#horizontalTab').easyResponsiveTabs({
+      type: 'default', //Types: default, vertical, accordion           
+      width: 'auto', //auto or any width like 600px
+      fit: true,   // 100% fit in a container
+      closed: 'accordion', // Start closed if in accordion view
+      activate: function(event) { // Callback function if tab is switched
+      var $tab = $(this);
+      var $info = $('#tabInfo');
+      var $name = $('span', $info);
+      $name.text($tab.text());
+      $info.show();
+      }
+      });
+      $('#verticalTab').easyResponsiveTabs({
+      type: 'vertical',
+      width: 'auto',
+      fit: true
+      });
+      });
+    </script>
+    <script>
+      $('.counter').countUp();
+    </script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){		
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        /*
+          var defaults = {
+          containerID: 'toTop', // fading element id
+          containerHoverID: 'toTopHover', // fading element hover id
+          scrollSpeed: 1200,
+          easingType: 'linear' 
+          };
+        */
+                  
+        $().UItoTop({ easingType: 'easeOutQuart' });
+                  
+        });
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // React.js ID
+      gtag('config', 'UA-118965717-6');
+    </script>
+  </head>
+
+  <!-- BODY options, add following classes to body to change options
+
+  // Header options
+  1. '.header-fixed'					- Fixed Header
+
+  // Brand options
+  1. '.brand-minimized'       - Minimized brand (Only symbol)
+
+  // Sidebar options
+  1. '.sidebar-fixed'					- Fixed Sidebar
+  2. '.sidebar-hidden'				- Hidden Sidebar
+  3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+  4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+  5. '.sidebar-compact'			  - Compact Sidebar
+
+  // Aside options
+  1. '.aside-menu-fixed'			- Fixed Aside Menu
+  2. '.aside-menu-hidden'			- Hidden Aside Menu
+  3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+  // Breadcrumb options
+  1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
+  // Footer options
+  1. '.footer-fixed'					- Fixed footer
+
+  -->
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script src="http://gropse.com/gropse.com/design/souqalasal.com/common/js/jquery.min.js"></script>
+    <script src="http://gropse.com/gropse.com/design/souqalasal.com/common/js/bootstrap.min.js"></script>
+    <script src="http://gropse.com/gropse.com/design/souqalasal.com/common/js/parallax.js"></script>
+    <script src="http://gropse.com/gropse.com/design/souqalasal.com/common/js/jquery.jcarousel.min.js"></script>
+    <script src="http://gropse.com/gropse.com/design/souqalasal.com/common/js/cloudzoom.js"></script>
+    <script src="http://gropse.com/gropse.com/design/souqalasal.com/common/js/main.js"></script>
+    <script src="http://gropse.com/gropse.com/design/souqalasal.com/common/js/revslider.js"></script>
+    <script src="http://gropse.com/gropse.com/design/souqalasal.com/common/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script type="text/javascript">
+        $('table').DataTable();
+    </script>
+    
+  </body>
+</html>
