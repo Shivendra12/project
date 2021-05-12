@@ -21,7 +21,7 @@
     "mongoose": "^5.7.5",
     "morgan": "~1.9.1",
     "multer": "^1.4.2",
-    "nodemailer": "^6.4.3",
+    "nodemailer": "^6.4.16",
     "nodemailer-smtp-transport": "^2.7.4",
     "pick": "0.0.1",
     "uuid": "^7.0.2"
